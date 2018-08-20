@@ -22,7 +22,6 @@ buildscript {
 
 apply plugin: DependenciesGraphPlugin
 
-
 subprojects {
     group "io.pivotal.pal.tracker"
 
