@@ -4,3 +4,12 @@ https://registration-pal-sunil.apps.pikes.pal.pivotal.io/projects?accountId=1
 https://allocations-pal-sunil.apps.pikes.pal.pivotal.io/allocations?projectId=1
 https://backlog-pal-sunil.apps.pikes.pal.pivotal.io/stories?projectId=1
 https://timesheets-pal-sunil.apps.pikes.pal.pivotal.io/time-entries?userId=1
+
+
+./gradlew cloudNativeDeveloperDistributedSystemWithSecurity \
+    -PregistrationServerUrl=https://registration-pal-sunil.apps.pikes.pal.pivotal.io \
+    -PbacklogServerUrl=https://backlog-pal-sunil.apps.pikes.pal.pivotal.io \
+    -PallocationsServerUrl=https://allocations-pal-sunil.apps.pikes.pal.pivotal.io \
+    -PtimesheetsServerUrl=https://timesheets-pal-sunil.apps.pikes.pal.pivotal.io \
+    -PactuatorUsername=actuator \
+    -PactuatorPassword=operations4red
